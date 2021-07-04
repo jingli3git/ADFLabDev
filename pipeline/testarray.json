@@ -1,0 +1,36 @@
+{
+	"name": "testarray",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"parameters": {
+			"inputs_static": {
+				"type": "object",
+				"defaultValue": [
+					{
+						"sql": "Select t.* From CTPRDDAT.CTPCL t",
+						"folder": "CTPRDDAT.CTPCL",
+						"period": "[period]"
+					},
+					{
+						"sql": "Select t.* From CTPRDDAT.CTPCM t",
+						"folder": "CTPRDDAT.CTPCM",
+						"period": "[period]"
+					}
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-06-08T05:31:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

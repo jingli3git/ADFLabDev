@@ -1,0 +1,9 @@
+{
+	"name": "ADFLabDev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7b70846b-525b-46d3-81d5-4ec144e870ea",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

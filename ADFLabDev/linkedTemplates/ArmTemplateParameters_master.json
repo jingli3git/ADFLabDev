@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFLabDev"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://tutorial1sa1.dfs.core.windows.net"
+		},
+		"testarray_properties_testarray_parameters_inputs_static": {
+			"value": [
+				{
+					"sql": "Select t.* From CTPRDDAT.CTPCL t",
+					"folder": "CTPRDDAT.CTPCL",
+					"period": "[[period]"
+				},
+				{
+					"sql": "Select t.* From CTPRDDAT.CTPCM t",
+					"folder": "CTPRDDAT.CTPCM",
+					"period": "[[period]"
+				}
+			]
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
